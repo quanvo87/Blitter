@@ -1,5 +1,5 @@
 //
-//  ConvertibleFromJSOND.swift
+//  ConvertibleFromJSON.swift
 //  TwitterClone
 //
 //  Created by David Ungar on 8/29/16.
