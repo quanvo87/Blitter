@@ -98,4 +98,6 @@ public struct OriginalTwitterClone: TwitterCloneProtocol {
             
         }
     }
+    
+    public init() {}
 }

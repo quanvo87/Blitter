@@ -14,26 +14,9 @@
  * limitations under the License.
  **/
 
-import Kitura
-import Kassandra
 import Foundation
 
 
 
-public let router = Router()
-
-public let kassandra = Kassandra()
-
-
-let id = "follow/:id"
-
-let theClone: TwitterCloneProtocol = OriginalTwitterClone()
-
-router.get("/",  handler: theClone.getAll)
-router.post("/", handler: theClone.tweet)
-router.post(id,  handler: theClone.follow)
-
-
-Kitura.addHTTPServer(onPort: 8090, with: router)
-
-Kitura.run()
+private let driver = OriginalTwitterCloneKituraDriver()
+driver.run()
