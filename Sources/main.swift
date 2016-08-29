@@ -27,9 +27,11 @@ public let kassandra = Kassandra()
 
 let id = "follow/:id"
 
-router.get("/", handler: getAll)
-router.post("/", handler: tweet)
-router.post(id, handler: follow)
+let theClone: TwitterCloneProtocol = OriginalTwitterClone()
+
+router.get("/",  handler: theClone.getAll)
+router.post("/", handler: theClone.tweet)
+router.post(id,  handler: theClone.follow)
 
 
 Kitura.addHTTPServer(onPort: 8090, with: router)
