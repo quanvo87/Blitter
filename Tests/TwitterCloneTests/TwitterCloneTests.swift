@@ -1,5 +1,5 @@
 import XCTest
-@testable import TwitterClone
+@testable import TwitterCloneCocoaApp
 
 class TwitterCloneTests: XCTestCase {
     func testExample() {

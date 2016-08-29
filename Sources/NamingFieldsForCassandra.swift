@@ -23,7 +23,6 @@ extension NamingFieldsForCassandra {
     }
 }
 
-// TODO: abstract conformance so that these three are just one line about TwitterCloneModel
 extension Post        .FieldNames: NamingFieldsForCassandra { static let idCase = id }
 extension Users       .FieldNames: NamingFieldsForCassandra { static let idCase = id }
 extension Relationship.FieldNames: NamingFieldsForCassandra { static let idCase = id }

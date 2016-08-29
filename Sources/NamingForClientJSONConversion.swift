@@ -18,7 +18,10 @@ extension NamingForClientJSONConversion {
     }
 }
 
-// TODO: abstract conformance so that these three are just one line about TwitterCloneModel
+protocol FieldNamingForClientJSONConversion {
+    associatedtype FieldNames: NamingForClientJSONConversion
+}
+
 extension Post        .FieldNames: NamingForClientJSONConversion {}
 extension Users       .FieldNames: NamingForClientJSONConversion {}
 extension Relationship.FieldNames: NamingForClientJSONConversion {}
