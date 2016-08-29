@@ -25,13 +25,7 @@ public struct OriginalTwitterClone: TwitterCloneProtocol {
             return
         }
         
-        let user    = json["user"].stringValue
-        let message = json["body"].stringValue
-        let time    = DateFormatter().date(from: json["timestamp"].stringValue)!
-        
-        let post = Post(id: UUID(), user: user, body: message, timestamp: time)
-        
-        post.save() { _ in
+        Post(json: json).save() { _ in
             
             do {
                 try response.status(.OK).end()
@@ -51,12 +45,12 @@ public struct OriginalTwitterClone: TwitterCloneProtocol {
             response.status(.badRequest)
             return
         }
-        
-        Relationship.fetch(predicate: "user" == userID, limit: 50) { result, error in
+        // FIXME: Is this right?
+        Relationship.fetch(predicate: Post.FieldNames.user.nameForCassandra == userID, limit: 50) { result, error in
             
             let friends = result!.map { $0.follower }
             
-            Post.fetch(predicate: "user" > friends, limit: 50) { tweets, error in
+            Post.fetch(predicate: Post.FieldNames.user.nameForCassandra > friends, limit: 50) { tweets, error in
                 
                 if let twts = tweets {
                     do {
@@ -84,16 +78,21 @@ public struct OriginalTwitterClone: TwitterCloneProtocol {
             return
         }
         
-        let user1 = json["followee"].stringValue
-        let user2 = json["follower"].stringValue
+        let followee = json[Relationship.FieldNames.followee.nameForClientJSON].stringValue
+        let follower = json[Relationship.FieldNames.follower.nameForClientJSON].stringValue
         
-        Relationship.insert([.id: UUID(), .follower: user1, .followee: user2]).execute { _ in
-            
-            do {
-                try response.status(.OK).end()
+        let followeeForInsertion = follower
+        let followerForInsertion = followee
+        Relationship.insert([.id: UUID(),
+                             .follower: followerForInsertion,
+                             .followee: followeeForInsertion])
+            .execute { _ in
                 
-            } catch {
-                print(error)
+                do {
+                    try response.status(.OK).end()
+                    
+                } catch {
+                    print(error)
             }
             
             

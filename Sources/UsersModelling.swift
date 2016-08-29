@@ -12,10 +12,7 @@ import Kassandra
 
 
 extension Users: Model {
-    enum Field: String {
-        case id = "id"
-        case name = "name"
-    }
+    typealias Field = FieldNames
     
     static let tableName = "Users"
     
@@ -37,7 +34,7 @@ extension Users: Model {
     }
     
     init(row: Row) {
-        self.id         = row["id"] as? UUID
-        self.name       = row["name"] as! String
+        self.id         = row[FieldNames.id.nameForCassandra]   as? UUID
+        self.name       = row[FieldNames.name.nameForCassandra] as! String
     }
 }

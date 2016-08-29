@@ -14,14 +14,11 @@ protocol ConvertibleToJSONDictionary {
     func toDictionary() -> JSONDictionary
 }
 
+
 extension Array where Element : ConvertibleToJSONDictionary {
-    
-    func toDictionary() -> [JSONDictionary] {
-        
+        func toDictionary() -> [JSONDictionary] {
         return self.map { $0.toDictionary() }
-        
     }
-    
 }
 
 
@@ -31,11 +28,12 @@ extension Post: ConvertibleToJSONDictionary {
         var result = JSONDictionary()
         // var result = [String:Any]()
         
-        result["id"]        = self.id
-        result["user"]      = self.user
-        result["body"]      = self.body
-        result["timestamp"] = self.timestamp
+        result[FieldNames.id       .nameForClientJSON] = self.id
+        result[FieldNames.user     .nameForClientJSON] = self.user
+        result[FieldNames.body     .nameForClientJSON] = self.body
+        result[FieldNames.timestamp.nameForClientJSON] = self.timestamp
         
         return result
     }
 }
+

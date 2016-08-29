@@ -12,12 +12,7 @@ import Kassandra
 
 
 extension Post: Model {
-    enum Field: String {
-        case id = "id"
-        case user = "user"
-        case body  = "message"
-        case timestamp = "timestamp"
-    }
+    typealias Field = FieldNames
     
     static let tableName = "Posts"
     
@@ -44,10 +39,10 @@ extension Post: Model {
     }
     
     init(row: Row) {
-        self.id         = row["id"] as? UUID
-        self.user       = row["user"] as! String
-        self.body       = row["body"] as! String
-        self.timestamp  = row["timestamp"] as! Date
+        self.id         = row[FieldNames.id.nameForCassandra       ] as? UUID
+        self.user       = row[FieldNames.user.nameForCassandra     ] as! String
+        self.body       = row[FieldNames.body.nameForCassandra     ] as! String
+        self.timestamp  = row[FieldNames.timestamp.nameForCassandra] as! Date
     }
 }
 

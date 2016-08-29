@@ -10,11 +10,7 @@ import Foundation
 import Kassandra
 
 extension Relationship: Model {
-    enum Field: String {
-        case id         = "id"
-        case followee   = "followee"
-        case follower   = "follower"
-    }
+    typealias Field = FieldNames
     
     static let tableName = "Relationship"
     
@@ -36,8 +32,8 @@ extension Relationship: Model {
     }
     
     init(row: Row) {
-        self.id         = row["id"] as? UUID
-        self.follower   = row["follower"] as! String
-        self.followee   = row["followee"] as! String
+        self.id         = row[FieldNames.id.nameForCassandra      ] as? UUID
+        self.follower   = row[FieldNames.follower.nameForCassandra] as! String
+        self.followee   = row[FieldNames.followee.nameForCassandra] as! String
     }
 }
