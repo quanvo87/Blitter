@@ -11,7 +11,7 @@ import Kitura
 import Kassandra
 
 
-struct OriginalTwitterCloneKituraDriver {
+public struct OriginalTwitterCloneKituraDriver {
     
     public let router = Router()
     public let kassandra = Kassandra()
