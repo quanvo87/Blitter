@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme LastUpgradeVersion = "9999" version = "1.3">
+  <BuildAction parallelizeBuildables = "YES" buildImplicitDependencies = "YES">
+    <BuildActionEntries>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_Socket"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "Socket"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_SSLService"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "SSLService"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_Kassandra"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "Kassandra"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_LoggerAPI"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "LoggerAPI"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_KituraSys"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "KituraSys"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_CHTTPParser"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "CHTTPParser"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_KituraNet"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "KituraNet"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_SwiftyJSON"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "SwiftyJSON"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_KituraTemplateEngine"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "KituraTemplateEngine"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_Kitura"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "Kitura"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_Cryptor"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "Cryptor"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_KituraSession"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "KituraSession"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_Credentials"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "Credentials"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_CredentialsFacebook"
+          BuildableName = "'lib$(TARGET_NAME)'"
+          BlueprintName = "CredentialsFacebook"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_TwitterClone"
+          BuildableName = "'$(TARGET_NAME)'"
+          BlueprintName = "TwitterClone"
+          ReferencedContainer = "container:TwitterClone.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+    </BuildActionEntries>
+  </BuildAction>
+  <TestAction
+    buildConfiguration = "Debug"
+    selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+    selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+    shouldUseLaunchSchemeArgsEnv = "YES"
+    codeCoverageEnabled = "NO">
+    <Testables>
+    <TestableReference
+      skipped = "NO">
+      <BuildableReference
+        BuildableIdentifier = "primary"
+        BlueprintIdentifier = "______Target_TwitterCloneTests"
+        BuildableName = "'$(TARGET_NAME)'"
+        BlueprintName = "TwitterCloneTests"
+        ReferencedContainer = "container:TwitterClone.xcodeproj">
+      </BuildableReference>
+    </TestableReference>
+    </Testables>
+  </TestAction>
+</Scheme>

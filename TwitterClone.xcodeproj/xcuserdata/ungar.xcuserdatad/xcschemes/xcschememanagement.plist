@@ -14,50 +14,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>TwitterCloneCocoaApp.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>TwitterCloneFramework.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BCB01E961D75001A00B7E434</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCB01E9E1D75001B00B7E434</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCE696261D74DC060091A82F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCE696361D74DC060091A82F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCE696411D74DC060091A82F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCE696C81D74F4140091A82F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>______Target_CHTTPParser</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>______Target_Credentials</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>______Target_CredentialsFacebook</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>______Target_Cryptor</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>______Target_KituraNet</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>______Target_KituraSession</key>
 		<dict>
 			<key>primary</key>
 			<true/>

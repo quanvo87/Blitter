@@ -16,24 +16,24 @@ protocol ConvertibleToJSONDictionary {
 
 
 extension Array where Element : ConvertibleToJSONDictionary {
-        func toDictionary() -> [JSONDictionary] {
+    func toDictionary() -> [JSONDictionary] {
         return self.map { $0.toDictionary() }
     }
 }
 
 
 
-extension Post: ConvertibleToJSONDictionary {
+extension Tweets: ConvertibleToJSONDictionary {
     func toDictionary() -> JSONDictionary {
         var result = JSONDictionary()
         // var result = [String:Any]()
         
-        result[FieldNames.id       .nameForClientJSON] = self.id
-        result[FieldNames.user     .nameForClientJSON] = self.user
-        result[FieldNames.body     .nameForClientJSON] = self.body
-        result[FieldNames.timestamp.nameForClientJSON] = self.timestamp
+        result[FieldNames.id          .nameForClientJSON] = "\(id!)"
+        result[FieldNames.author      .nameForClientJSON] =    author
+        result[FieldNames.subscriber  .nameForClientJSON] =    subscriber
+        result[FieldNames.tweet       .nameForClientJSON] =    tweet
+        result[FieldNames.timestamp   .nameForClientJSON] = "\(timestamp)"
         
         return result
     }
 }
-

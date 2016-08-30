@@ -14,14 +14,13 @@ protocol ConvertibleFromJSONDictionary {
 }
 
 
-extension Post: ConvertibleFromJSONDictionary {
+extension Tweets: ConvertibleFromJSONDictionary {
     init(json: JSON) {
-        let user    = json[FieldNames.user      .nameForClientJSON].stringValue
-        let message = json[FieldNames.body      .nameForClientJSON].stringValue
-        let time    = json[FieldNames.timestamp .nameForClientJSON].stringValue
-            |> DateFormatter().date(from:)
-            |> {$0!}
-        
-        self.init(id: UUID(), user: user, body: message, timestamp: time)
+        fatalError("unimplemented")
+    }
+}
+extension Subscription: ConvertibleFromJSONDictionary {
+    init(json: JSON) {
+        fatalError("unimplemented")
     }
 }

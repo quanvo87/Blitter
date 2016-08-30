@@ -15,7 +15,6 @@
  **/
 
 import Foundation
-import TwitterCloneFramework
 
 
 private let driver = OriginalTwitterCloneKituraDriver()

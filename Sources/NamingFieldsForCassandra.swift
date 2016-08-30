@@ -23,6 +23,5 @@ extension NamingFieldsForCassandra {
     }
 }
 
-extension Post        .FieldNames: NamingFieldsForCassandra { static let idCase = id }
-extension Users       .FieldNames: NamingFieldsForCassandra { static let idCase = id }
-extension Relationship.FieldNames: NamingFieldsForCassandra { static let idCase = id }
+extension Tweets        .FieldNames: NamingFieldsForCassandra { static let idCase = id }
+extension Subscription  .FieldNames: NamingFieldsForCassandra { static let idCase = id }

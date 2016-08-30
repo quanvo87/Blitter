@@ -22,6 +22,5 @@ protocol FieldNamingForClientJSONConversion {
     associatedtype FieldNames: NamingForClientJSONConversion
 }
 
-extension Post        .FieldNames: NamingForClientJSONConversion {}
-extension Users       .FieldNames: NamingForClientJSONConversion {}
-extension Relationship.FieldNames: NamingForClientJSONConversion {}
+extension Tweets        .FieldNames: NamingForClientJSONConversion {}
+extension Subscription  .FieldNames: NamingForClientJSONConversion {}

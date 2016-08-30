@@ -11,7 +11,8 @@ import Foundation
 import Kitura
 
 public protocol TwitterCloneProtocol {
-    func tweet (request: RouterRequest, response: RouterResponse, next: () -> Void)
-    func getAll(request: RouterRequest, response: RouterResponse, next: () -> Void)
-    func follow(request: RouterRequest, response: RouterResponse, next: () -> Void)
+    func tweet (       request: RouterRequest, response: RouterResponse, next: () -> Void) throws
+    func getMyFeed(    request: RouterRequest, response: RouterResponse, next: () -> Void) throws
+    func getUserTweets(request: RouterRequest, response: RouterResponse, next: () -> Void) throws
+    func followAuthor( request: RouterRequest, response: RouterResponse, next: () -> Void) throws
 }

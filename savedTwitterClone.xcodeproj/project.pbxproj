@@ -1,0 +1,2973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCB01EA01D75001B00B7E434 /* TwitterCloneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB01E971D75001A00B7E434 /* TwitterCloneFramework.framework */; };
+		BCB01EA51D75001B00B7E434 /* TwitterCloneFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB01EA41D75001B00B7E434 /* TwitterCloneFrameworkTests.swift */; };
+		BCB01EAE1D75005D00B7E434 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
+		BCB01EAF1D75005D00B7E434 /* Kassandra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kassandra" /* Kassandra.framework */; };
+		BCB01EB01D75005D00B7E434 /* Kitura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kitura" /* Kitura.framework */; };
+		BCB01EB11D75005D00B7E434 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraNet" /* KituraNet.framework */; };
+		BCB01EB21D75005D00B7E434 /* KituraSys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraSys" /* KituraSys.framework */; };
+		BCB01EB31D75005D00B7E434 /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */; };
+		BCB01EB41D75005D00B7E434 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; };
+		BCB01EB51D75005D00B7E434 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		BCB01EB61D75005D00B7E434 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SSLService" /* SSLService.framework */; };
+		BCB01EB71D75005D00B7E434 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* SwiftyJSON.framework */; };
+		BCB01ECF1D7500A200B7E434 /* NamingFieldsForCassandra.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE696211D74C2790091A82F /* NamingFieldsForCassandra.swift */; };
+		BCB01ED01D7500A200B7E434 /* ConvertibleToJSONDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC5FC51D73FC3A00875EF4 /* ConvertibleToJSONDictionary.swift */; };
+		BCB01ED11D7500A200B7E434 /* ConvertibleFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6961D1D74C0270091A82F /* ConvertibleFromJSON.swift */; };
+		BCB01ED21D7500A200B7E434 /* NamingForClientJSONConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6961F1D74C16F0091A82F /* NamingForClientJSONConversion.swift */; };
+		BCB01ED31D7500A200B7E434 /* TwitterClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/TwitterClone.swift /* TwitterClone.swift */; };
+		BCB01ED41D7500A200B7E434 /* TwitterCloneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC5FC01D73FB0500875EF4 /* TwitterCloneProtocol.swift */; };
+		BCB01ED51D7500A200B7E434 /* OriginalTwitterClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC5FC21D73FB7900875EF4 /* OriginalTwitterClone.swift */; };
+		BCB01ED61D7500A200B7E434 /* ModelStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC5FCE1D73FEA300875EF4 /* ModelStructures.swift */; };
+		BCB01ED71D7500A200B7E434 /* applyOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC5FD21D74AF7500875EF4 /* applyOperator.swift */; };
+		BCB01ED81D7500A200B7E434 /* KituraDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE696531D74DC400091A82F /* KituraDriver.swift */; };
+		BCB01ED91D7501C200B7E434 /* TwitterCloneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB01E971D75001A00B7E434 /* TwitterCloneFramework.framework */; };
+		BCB01EDA1D7501C200B7E434 /* TwitterCloneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCB01E971D75001A00B7E434 /* TwitterCloneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCB01EDD1D7501D200B7E434 /* TwitterCloneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB01E971D75001A00B7E434 /* TwitterCloneFramework.framework */; };
+		BCE6962A1D74DC060091A82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE696291D74DC060091A82F /* AppDelegate.swift */; };
+		BCE6962C1D74DC060091A82F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE6962B1D74DC060091A82F /* ViewController.swift */; };
+		BCE6962E1D74DC060091A82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE6962D1D74DC060091A82F /* Assets.xcassets */; };
+		BCE696311D74DC060091A82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE6962F1D74DC060091A82F /* Main.storyboard */; };
+		BCE696561D74EB500091A82F /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		BCE696571D74EB500091A82F /* Socket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE6965A1D74EB500091A82F /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SSLService" /* SSLService.framework */; };
+		BCE6965B1D74EB500091A82F /* SSLService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SSLService" /* SSLService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE6965E1D74EB500091A82F /* Kassandra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kassandra" /* Kassandra.framework */; };
+		BCE6965F1D74EB500091A82F /* Kassandra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kassandra" /* Kassandra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE696621D74EB500091A82F /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; };
+		BCE696631D74EB500091A82F /* LoggerAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE696661D74EB500091A82F /* KituraSys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraSys" /* KituraSys.framework */; };
+		BCE696671D74EB500091A82F /* KituraSys.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraSys" /* KituraSys.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE6966A1D74EB500091A82F /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
+		BCE6966B1D74EB500091A82F /* CHTTPParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE6966E1D74EB500091A82F /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraNet" /* KituraNet.framework */; };
+		BCE6966F1D74EB500091A82F /* KituraNet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraNet" /* KituraNet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE696721D74EB500091A82F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* SwiftyJSON.framework */; };
+		BCE696731D74EB500091A82F /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE696761D74EB500091A82F /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */; };
+		BCE696771D74EB500091A82F /* KituraTemplateEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCE6967A1D74EB510091A82F /* Kitura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kitura" /* Kitura.framework */; };
+		BCE6967B1D74EB510091A82F /* Kitura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kitura" /* Kitura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCF1ADC21D751ADE0020B18A /* AdaptingToModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1ADC11D751ADE0020B18A /* AdaptingToModels.swift */; };
+		BCF1ADC51D75348D0020B18A /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1ADC31D75348D0020B18A /* LclJSONSerialization.swift */; };
+		BCF1ADC61D75348D0020B18A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1ADC41D75348D0020B18A /* SwiftyJSON.swift */; };
+		BCF1ADC81D7534AF0020B18A /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1ADC31D75348D0020B18A /* LclJSONSerialization.swift */; };
+		BCF1ADC91D7534AF0020B18A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1ADC41D75348D0020B18A /* SwiftyJSON.swift */; };
+		_LinkFileRef_CHTTPParser_via_Kitura /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
+		_LinkFileRef_CHTTPParser_via_KituraNet /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
+		_LinkFileRef_CHTTPParser_via_TwitterClone /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
+		_LinkFileRef_CHTTPParser_via_TwitterCloneTests /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
+		_LinkFileRef_Kassandra_via_TwitterClone /* Kassandra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kassandra" /* Kassandra.framework */; };
+		_LinkFileRef_Kassandra_via_TwitterCloneTests /* Kassandra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kassandra" /* Kassandra.framework */; };
+		_LinkFileRef_KituraNet_via_Kitura /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraNet" /* KituraNet.framework */; };
+		_LinkFileRef_KituraNet_via_TwitterClone /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraNet" /* KituraNet.framework */; };
+		_LinkFileRef_KituraNet_via_TwitterCloneTests /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraNet" /* KituraNet.framework */; };
+		_LinkFileRef_KituraSys_via_Kitura /* KituraSys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraSys" /* KituraSys.framework */; };
+		_LinkFileRef_KituraSys_via_KituraNet /* KituraSys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraSys" /* KituraSys.framework */; };
+		_LinkFileRef_KituraSys_via_TwitterClone /* KituraSys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraSys" /* KituraSys.framework */; };
+		_LinkFileRef_KituraSys_via_TwitterCloneTests /* KituraSys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraSys" /* KituraSys.framework */; };
+		_LinkFileRef_KituraTemplateEngine_via_Kitura /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */; };
+		_LinkFileRef_KituraTemplateEngine_via_TwitterClone /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */; };
+		_LinkFileRef_KituraTemplateEngine_via_TwitterCloneTests /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */; };
+		_LinkFileRef_Kitura_via_TwitterClone /* Kitura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kitura" /* Kitura.framework */; };
+		_LinkFileRef_Kitura_via_TwitterCloneTests /* Kitura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Kitura" /* Kitura.framework */; };
+		_LinkFileRef_LoggerAPI_via_Kitura /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; };
+		_LinkFileRef_LoggerAPI_via_KituraNet /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; };
+		_LinkFileRef_LoggerAPI_via_KituraSys /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; };
+		_LinkFileRef_LoggerAPI_via_TwitterClone /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; };
+		_LinkFileRef_LoggerAPI_via_TwitterCloneTests /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_LoggerAPI" /* LoggerAPI.framework */; };
+		_LinkFileRef_SSLService_via_Kassandra /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SSLService" /* SSLService.framework */; };
+		_LinkFileRef_SSLService_via_TwitterClone /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SSLService" /* SSLService.framework */; };
+		_LinkFileRef_SSLService_via_TwitterCloneTests /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SSLService" /* SSLService.framework */; };
+		_LinkFileRef_Socket_via_Kassandra /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		_LinkFileRef_Socket_via_Kitura /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		_LinkFileRef_Socket_via_KituraNet /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		_LinkFileRef_Socket_via_SSLService /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		_LinkFileRef_Socket_via_TwitterClone /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		_LinkFileRef_Socket_via_TwitterCloneTests /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socket" /* Socket.framework */; };
+		_LinkFileRef_SwiftyJSON_via_Kitura /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* SwiftyJSON.framework */; };
+		_LinkFileRef_SwiftyJSON_via_TwitterClone /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* SwiftyJSON.framework */; };
+		_LinkFileRef_SwiftyJSON_via_TwitterCloneTests /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyJSON" /* SwiftyJSON.framework */; };
+		_LinkFileRef_TwitterClone_via_TwitterCloneTests /* TwitterClone in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TwitterClone" /* TwitterClone */; };
+		"__src_cc_ref_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c */; };
+		"__src_cc_ref_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/utils.c" /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/utils.c" /* utils.c */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Config.swift" /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Config.swift" /* Config.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Definitions.swift" /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Definitions.swift" /* Definitions.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Delete.swift" /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Delete.swift" /* Delete.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Event.swift" /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Event.swift" /* Event.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Extensions.swift" /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Extensions.swift" /* Extensions.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Insert.swift" /* Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Insert.swift" /* Insert.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Kassandra.swift" /* Kassandra.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Kassandra.swift" /* Kassandra.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/KassandraDelegate.swift" /* KassandraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/KassandraDelegate.swift" /* KassandraDelegate.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Kind.swift" /* Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Kind.swift" /* Kind.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Model.swift" /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Model.swift" /* Model.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Query.swift" /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Query.swift" /* Query.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/QueryBuilder.swift" /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/QueryBuilder.swift" /* QueryBuilder.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Raw.swift" /* Raw.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Raw.swift" /* Raw.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Request.swift" /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Request.swift" /* Request.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Result.swift" /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Result.swift" /* Result.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Select.swift" /* Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Select.swift" /* Select.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Table.swift" /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Table.swift" /* Table.swift */; };
+		"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Update.swift" /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Update.swift" /* Update.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Error.swift" /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Error.swift" /* Error.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/FileResourceServer.swift" /* FileResourceServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/FileResourceServer.swift" /* FileResourceServer.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/HTTPVersion.swift" /* HTTPVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/HTTPVersion.swift" /* HTTPVersion.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Headers.swift" /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Headers.swift" /* Headers.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/InternalError.swift" /* InternalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/InternalError.swift" /* InternalError.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/JSONPError.swift" /* JSONPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/JSONPError.swift" /* JSONPError.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Kitura.swift" /* Kitura.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Kitura.swift" /* Kitura.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/LinkParameter.swift" /* LinkParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/LinkParameter.swift" /* LinkParameter.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/MimeTypeAcceptor.swift" /* MimeTypeAcceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/MimeTypeAcceptor.swift" /* MimeTypeAcceptor.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouteRegex.swift" /* RouteRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouteRegex.swift" /* RouteRegex.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Router.swift" /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Router.swift" /* Router.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterElement.swift" /* RouterElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterElement.swift" /* RouterElement.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterElementWalker.swift" /* RouterElementWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterElementWalker.swift" /* RouterElementWalker.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs+Error.swift" /* RouterHTTPVerbs+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs+Error.swift" /* RouterHTTPVerbs+Error.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs_generated.swift" /* RouterHTTPVerbs_generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs_generated.swift" /* RouterHTTPVerbs_generated.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterHandler.swift" /* RouterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHandler.swift" /* RouterHandler.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMethod.swift" /* RouterMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMethod.swift" /* RouterMethod.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddleware.swift" /* RouterMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddleware.swift" /* RouterMiddleware.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareGenerator.swift" /* RouterMiddlewareGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareGenerator.swift" /* RouterMiddlewareGenerator.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareWalker.swift" /* RouterMiddlewareWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareWalker.swift" /* RouterMiddlewareWalker.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterRequest.swift" /* RouterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterRequest.swift" /* RouterRequest.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterResponse.swift" /* RouterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterResponse.swift" /* RouterResponse.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/TemplatingError.swift" /* TemplatingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/TemplatingError.swift" /* TemplatingError.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParser.swift" /* bodyParser/BodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParser.swift" /* bodyParser/BodyParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift" /* bodyParser/BodyParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift" /* bodyParser/BodyParserProtocol.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/JSONBodyParser.swift" /* bodyParser/JSONBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/JSONBodyParser.swift" /* bodyParser/JSONBodyParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift" /* bodyParser/MultiPartBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift" /* bodyParser/MultiPartBodyParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/ParsedBody.swift" /* bodyParser/ParsedBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/ParsedBody.swift" /* bodyParser/ParsedBody.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/Part.swift" /* bodyParser/Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/Part.swift" /* bodyParser/Part.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/TextBodyParser.swift" /* bodyParser/TextBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/TextBodyParser.swift" /* bodyParser/TextBodyParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift" /* bodyParser/URLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift" /* bodyParser/URLEncodedBodyParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/contentType/ContentType.swift" /* contentType/ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/contentType/ContentType.swift" /* contentType/ContentType.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/contentType/types.swift" /* contentType/types.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/contentType/types.swift" /* contentType/types.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift" /* staticFileServer/CacheRelatedHeadersSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift" /* staticFileServer/CacheRelatedHeadersSetter.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift" /* staticFileServer/CompositeHeadersSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift" /* staticFileServer/CompositeHeadersSetter.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/FileServer.swift" /* staticFileServer/FileServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/FileServer.swift" /* staticFileServer/FileServer.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift" /* staticFileServer/ResponseHeadersSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift" /* staticFileServer/ResponseHeadersSetter.swift */; };
+		"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/StaticFileServer.swift" /* staticFileServer/StaticFileServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/StaticFileServer.swift" /* staticFileServer/StaticFileServer.swift */; };
+		"__src_cc_ref_Packages/Kitura-Sys-0.28.0/Sources/KituraSys/StringUtils.swift" /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-Sys-0.28.0/Sources/KituraSys/StringUtils.swift" /* StringUtils.swift */; };
+		"__src_cc_ref_Packages/Kitura-TemplateEngine-0.26.0/Sources/KituraTemplateEngine/TemplateEngine.swift" /* TemplateEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-TemplateEngine-0.26.0/Sources/KituraTemplateEngine/TemplateEngine.swift" /* TemplateEngine.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/BufferList.swift" /* BufferList.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/BufferList.swift" /* BufferList.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientRequest.swift" /* ClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientRequest.swift" /* ClientRequest.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientResponse.swift" /* ClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientResponse.swift" /* ClientResponse.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/Error.swift" /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/Error.swift" /* Error.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGI.swift" /* FastCGI/FastCGI.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGI.swift" /* FastCGI/FastCGI.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordCreate.swift" /* FastCGI/FastCGIRecordCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordCreate.swift" /* FastCGI/FastCGIRecordCreate.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordParser.swift" /* FastCGI/FastCGIRecordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordParser.swift" /* FastCGI/FastCGIRecordParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServer.swift" /* FastCGI/FastCGIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServer.swift" /* FastCGI/FastCGIServer.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerRequest.swift" /* FastCGI/FastCGIServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerRequest.swift" /* FastCGI/FastCGIServerRequest.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerResponse.swift" /* FastCGI/FastCGIServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerResponse.swift" /* FastCGI/FastCGIServerResponse.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTP.swift" /* HTTP/HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTP.swift" /* HTTP/HTTP.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPIncomingMessage.swift" /* HTTP/HTTPIncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPIncomingMessage.swift" /* HTTP/HTTPIncomingMessage.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServer.swift" /* HTTP/HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServer.swift" /* HTTP/HTTPServer.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerRequest.swift" /* HTTP/HTTPServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerRequest.swift" /* HTTP/HTTPServerRequest.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerResponse.swift" /* HTTP/HTTPServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerResponse.swift" /* HTTP/HTTPServerResponse.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/IncomingHTTPSocketProcessor.swift" /* HTTP/IncomingHTTPSocketProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/IncomingHTTPSocketProcessor.swift" /* HTTP/IncomingHTTPSocketProcessor.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParser.swift" /* HTTPParser/HTTPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParser.swift" /* HTTPParser/HTTPParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParserStatus.swift" /* HTTPParser/HTTPParserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParserStatus.swift" /* HTTPParser/HTTPParserStatus.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/URLParser.swift" /* HTTPParser/URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/URLParser.swift" /* HTTPParser/URLParser.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HeadersContainer.swift" /* HeadersContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HeadersContainer.swift" /* HeadersContainer.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketHandler.swift" /* IncomingSocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketHandler.swift" /* IncomingSocketHandler.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketManager.swift" /* IncomingSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketManager.swift" /* IncomingSocketManager.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketProcessor.swift" /* IncomingSocketProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketProcessor.swift" /* IncomingSocketProcessor.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ListenerGroup.swift" /* ListenerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ListenerGroup.swift" /* ListenerGroup.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/PseudoSynchronousReader.swift" /* PseudoSynchronousReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/PseudoSynchronousReader.swift" /* PseudoSynchronousReader.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/SPIUtils.swift" /* SPIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/SPIUtils.swift" /* SPIUtils.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerDelegate.swift" /* ServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerDelegate.swift" /* ServerDelegate.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerRequest.swift" /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerRequest.swift" /* ServerRequest.swift */; };
+		"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerResponse.swift" /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerResponse.swift" /* ServerResponse.swift */; };
+		"__src_cc_ref_Packages/LoggerAPI-0.10.0/Sources/LoggerAPI/Logger.swift" /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/LoggerAPI-0.10.0/Sources/LoggerAPI/Logger.swift" /* Logger.swift */; };
+		"__src_cc_ref_Packages/SSLService-0.10.3/Sources/SSLService.swift" /* SSLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SSLService-0.10.3/Sources/SSLService.swift" /* SSLService.swift */; };
+		"__src_cc_ref_Packages/Socket-0.10.3/Sources/Socket.swift" /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socket-0.10.3/Sources/Socket.swift" /* Socket.swift */; };
+		"__src_cc_ref_Packages/Socket-0.10.3/Sources/SocketProtocols.swift" /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socket-0.10.3/Sources/SocketProtocols.swift" /* SocketProtocols.swift */; };
+		"__src_cc_ref_Packages/Socket-0.10.3/Sources/SocketUtils.swift" /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socket-0.10.3/Sources/SocketUtils.swift" /* SocketUtils.swift */; };
+		__src_cc_ref_Sources/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/main.swift /* main.swift */; };
+		__src_cc_ref_Tests/TwitterCloneTests/TwitterCloneTests.swift /* TwitterCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/TwitterCloneTests/TwitterCloneTests.swift /* TwitterCloneTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCB01EA11D75001B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB01E961D75001A00B7E434;
+			remoteInfo = TwitterCloneFramework;
+		};
+		BCB01EB81D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Socket";
+			remoteInfo = Socket;
+		};
+		BCB01EBA1D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SSLService";
+			remoteInfo = SSLService;
+		};
+		BCB01EBC1D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Kassandra";
+			remoteInfo = Kassandra;
+		};
+		BCB01EBE1D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		BCB01EC01D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraSys";
+			remoteInfo = KituraSys;
+		};
+		BCB01EC21D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_CHTTPParser";
+			remoteInfo = CHTTPParser;
+		};
+		BCB01EC41D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraNet";
+			remoteInfo = KituraNet;
+		};
+		BCB01EC61D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		BCB01EC81D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraTemplateEngine";
+			remoteInfo = KituraTemplateEngine;
+		};
+		BCB01ECA1D75008B00B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Kitura";
+			remoteInfo = Kitura;
+		};
+		BCB01EDB1D7501C200B7E434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB01E961D75001A00B7E434;
+			remoteInfo = TwitterCloneFramework;
+		};
+		BCCC5FB51D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Socket";
+			remoteInfo = Socket;
+		};
+		BCCC5FB61D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SSLService";
+			remoteInfo = SSLService;
+		};
+		BCCC5FB71D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		BCCC5FB81D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraSys";
+			remoteInfo = KituraSys;
+		};
+		BCCC5FB91D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_CHTTPParser";
+			remoteInfo = CHTTPParser;
+		};
+		BCCC5FBA1D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraNet";
+			remoteInfo = KituraNet;
+		};
+		BCCC5FBB1D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		BCCC5FBC1D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraTemplateEngine";
+			remoteInfo = KituraTemplateEngine;
+		};
+		BCCC5FBD1D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Kassandra";
+			remoteInfo = Kassandra;
+		};
+		BCCC5FBE1D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Kitura";
+			remoteInfo = Kitura;
+		};
+		BCCC5FBF1D73F8CD00875EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_TwitterClone";
+			remoteInfo = TwitterClone;
+		};
+		BCE696581D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Socket";
+			remoteInfo = Socket;
+		};
+		BCE6965C1D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SSLService";
+			remoteInfo = SSLService;
+		};
+		BCE696601D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Kassandra";
+			remoteInfo = Kassandra;
+		};
+		BCE696641D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		BCE696681D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraSys";
+			remoteInfo = KituraSys;
+		};
+		BCE6966C1D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_CHTTPParser";
+			remoteInfo = CHTTPParser;
+		};
+		BCE696701D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraNet";
+			remoteInfo = KituraNet;
+		};
+		BCE696741D74EB500091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		BCE696781D74EB510091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_KituraTemplateEngine";
+			remoteInfo = KituraTemplateEngine;
+		};
+		BCE6967C1D74EB510091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Kitura";
+			remoteInfo = Kitura;
+		};
+		BCE6968C1D74EE550091A82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE696261D74DC060091A82F;
+			remoteInfo = TwitterCloneCocoaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCE6967E1D74EB510091A82F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BCE696731D74EB500091A82F /* SwiftyJSON.framework in Embed Frameworks */,
+				BCE696571D74EB500091A82F /* Socket.framework in Embed Frameworks */,
+				BCE6966F1D74EB500091A82F /* KituraNet.framework in Embed Frameworks */,
+				BCE6966B1D74EB500091A82F /* CHTTPParser.framework in Embed Frameworks */,
+				BCE696631D74EB500091A82F /* LoggerAPI.framework in Embed Frameworks */,
+				BCE696671D74EB500091A82F /* KituraSys.framework in Embed Frameworks */,
+				BCE6965F1D74EB500091A82F /* Kassandra.framework in Embed Frameworks */,
+				BCE6965B1D74EB500091A82F /* SSLService.framework in Embed Frameworks */,
+				BCE6967B1D74EB510091A82F /* Kitura.framework in Embed Frameworks */,
+				BCE696771D74EB500091A82F /* KituraTemplateEngine.framework in Embed Frameworks */,
+				BCB01EDA1D7501C200B7E434 /* TwitterCloneFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BCB01E971D75001A00B7E434 /* TwitterCloneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwitterCloneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB01E991D75001A00B7E434 /* TwitterCloneFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterCloneFramework.h; sourceTree = "<group>"; };
+		BCB01E9A1D75001A00B7E434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB01E9F1D75001B00B7E434 /* TwitterCloneFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterCloneFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB01EA41D75001B00B7E434 /* TwitterCloneFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneFrameworkTests.swift; sourceTree = "<group>"; };
+		BCB01EA61D75001B00B7E434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCC5FC01D73FB0500875EF4 /* TwitterCloneProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterCloneProtocol.swift; sourceTree = "<group>"; };
+		BCCC5FC21D73FB7900875EF4 /* OriginalTwitterClone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalTwitterClone.swift; sourceTree = "<group>"; };
+		BCCC5FC51D73FC3A00875EF4 /* ConvertibleToJSONDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertibleToJSONDictionary.swift; sourceTree = "<group>"; };
+		BCCC5FCE1D73FEA300875EF4 /* ModelStructures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelStructures.swift; sourceTree = "<group>"; };
+		BCCC5FD21D74AF7500875EF4 /* applyOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = applyOperator.swift; sourceTree = "<group>"; };
+		BCE6961D1D74C0270091A82F /* ConvertibleFromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertibleFromJSON.swift; sourceTree = "<group>"; };
+		BCE6961F1D74C16F0091A82F /* NamingForClientJSONConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingForClientJSONConversion.swift; sourceTree = "<group>"; };
+		BCE696211D74C2790091A82F /* NamingFieldsForCassandra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingFieldsForCassandra.swift; sourceTree = "<group>"; };
+		BCE696271D74DC060091A82F /* TwitterCloneCocoaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterCloneCocoaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE696291D74DC060091A82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCE6962B1D74DC060091A82F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCE6962D1D74DC060091A82F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCE696301D74DC060091A82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCE696321D74DC060091A82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE696531D74DC400091A82F /* KituraDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KituraDriver.swift; sourceTree = "<group>"; };
+		BCF1ADC11D751ADE0020B18A /* AdaptingToModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptingToModels.swift; sourceTree = "<group>"; };
+		BCF1ADC31D75348D0020B18A /* LclJSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LclJSONSerialization.swift; path = "Packages/SwiftyJSON-14.0.0/Source/LclJSONSerialization.swift"; sourceTree = "<group>"; };
+		BCF1ADC41D75348D0020B18A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "Packages/SwiftyJSON-14.0.0/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http_parser.c; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/utils.c" /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Config.swift" /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Definitions.swift" /* Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Delete.swift" /* Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Event.swift" /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Extensions.swift" /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Insert.swift" /* Insert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insert.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Kassandra.swift" /* Kassandra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kassandra.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/KassandraDelegate.swift" /* KassandraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KassandraDelegate.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Kind.swift" /* Kind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kind.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Model.swift" /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Query.swift" /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/QueryBuilder.swift" /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Raw.swift" /* Raw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raw.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Request.swift" /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Result.swift" /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Select.swift" /* Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Select.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Table.swift" /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Update.swift" /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Error.swift" /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/FileResourceServer.swift" /* FileResourceServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileResourceServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/HTTPVersion.swift" /* HTTPVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPVersion.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Headers.swift" /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/InternalError.swift" /* InternalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalError.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/JSONPError.swift" /* JSONPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPError.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Kitura.swift" /* Kitura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitura.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/LinkParameter.swift" /* LinkParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkParameter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/MimeTypeAcceptor.swift" /* MimeTypeAcceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypeAcceptor.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouteRegex.swift" /* RouteRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRegex.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Router.swift" /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterElement.swift" /* RouterElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterElement.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterElementWalker.swift" /* RouterElementWalker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterElementWalker.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs+Error.swift" /* RouterHTTPVerbs+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouterHTTPVerbs+Error.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs_generated.swift" /* RouterHTTPVerbs_generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHTTPVerbs_generated.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHandler.swift" /* RouterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHandler.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMethod.swift" /* RouterMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMethod.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddleware.swift" /* RouterMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMiddleware.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareGenerator.swift" /* RouterMiddlewareGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMiddlewareGenerator.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareWalker.swift" /* RouterMiddlewareWalker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMiddlewareWalker.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterRequest.swift" /* RouterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterResponse.swift" /* RouterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/TemplatingError.swift" /* TemplatingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatingError.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParser.swift" /* bodyParser/BodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/BodyParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift" /* bodyParser/BodyParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/BodyParserProtocol.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/JSONBodyParser.swift" /* bodyParser/JSONBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/JSONBodyParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift" /* bodyParser/MultiPartBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/MultiPartBodyParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/ParsedBody.swift" /* bodyParser/ParsedBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/ParsedBody.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/Part.swift" /* bodyParser/Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/Part.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/TextBodyParser.swift" /* bodyParser/TextBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/TextBodyParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift" /* bodyParser/URLEncodedBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyParser/URLEncodedBodyParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/contentType/ContentType.swift" /* contentType/ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentType/ContentType.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/contentType/types.swift" /* contentType/types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentType/types.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift" /* staticFileServer/CacheRelatedHeadersSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticFileServer/CacheRelatedHeadersSetter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift" /* staticFileServer/CompositeHeadersSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticFileServer/CompositeHeadersSetter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/FileServer.swift" /* staticFileServer/FileServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticFileServer/FileServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift" /* staticFileServer/ResponseHeadersSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticFileServer/ResponseHeadersSetter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/StaticFileServer.swift" /* staticFileServer/StaticFileServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticFileServer/StaticFileServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-Sys-0.28.0/Sources/KituraSys/StringUtils.swift" /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-TemplateEngine-0.26.0/Sources/KituraTemplateEngine/TemplateEngine.swift" /* TemplateEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEngine.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/BufferList.swift" /* BufferList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferList.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientRequest.swift" /* ClientRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientResponse.swift" /* ClientResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/Error.swift" /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGI.swift" /* FastCGI/FastCGI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI/FastCGI.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordCreate.swift" /* FastCGI/FastCGIRecordCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI/FastCGIRecordCreate.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordParser.swift" /* FastCGI/FastCGIRecordParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI/FastCGIRecordParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServer.swift" /* FastCGI/FastCGIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI/FastCGIServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerRequest.swift" /* FastCGI/FastCGIServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI/FastCGIServerRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerResponse.swift" /* FastCGI/FastCGIServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI/FastCGIServerResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTP.swift" /* HTTP/HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP/HTTP.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPIncomingMessage.swift" /* HTTP/HTTPIncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP/HTTPIncomingMessage.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServer.swift" /* HTTP/HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP/HTTPServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerRequest.swift" /* HTTP/HTTPServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP/HTTPServerRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerResponse.swift" /* HTTP/HTTPServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP/HTTPServerResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/IncomingHTTPSocketProcessor.swift" /* HTTP/IncomingHTTPSocketProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP/IncomingHTTPSocketProcessor.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParser.swift" /* HTTPParser/HTTPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParser/HTTPParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParserStatus.swift" /* HTTPParser/HTTPParserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParser/HTTPParserStatus.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/URLParser.swift" /* HTTPParser/URLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParser/URLParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HeadersContainer.swift" /* HeadersContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadersContainer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketHandler.swift" /* IncomingSocketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketHandler.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketManager.swift" /* IncomingSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketManager.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketProcessor.swift" /* IncomingSocketProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketProcessor.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ListenerGroup.swift" /* ListenerGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerGroup.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/PseudoSynchronousReader.swift" /* PseudoSynchronousReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PseudoSynchronousReader.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/SPIUtils.swift" /* SPIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPIUtils.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerDelegate.swift" /* ServerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDelegate.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerRequest.swift" /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerResponse.swift" /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/LoggerAPI-0.10.0/Sources/LoggerAPI/Logger.swift" /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SSLService-0.10.3/Sources/SSLService.swift" /* SSLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLService.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socket-0.10.3/Sources/Socket.swift" /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socket-0.10.3/Sources/SocketProtocols.swift" /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socket-0.10.3/Sources/SocketUtils.swift" /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/TwitterClone.swift /* TwitterClone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterClone.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/TwitterCloneTests/TwitterCloneTests.swift /* TwitterCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_TwitterClone.xcodeproj/Configs/Project.xcconfig /* TwitterClone.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TwitterClone.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		"_____Product_CHTTPParser" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Kassandra" /* Kassandra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kassandra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Kitura" /* Kitura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kitura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_KituraNet" /* KituraNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_KituraSys" /* KituraSys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraSys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_LoggerAPI" /* LoggerAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoggerAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SSLService" /* SSLService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSLService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Socket" /* Socket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SwiftyJSON" /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_TwitterClone" /* TwitterClone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = TwitterClone; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_TwitterCloneTests" /* TwitterCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TwitterCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCB01E931D75001A00B7E434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB01EAE1D75005D00B7E434 /* CHTTPParser.framework in Frameworks */,
+				BCB01EAF1D75005D00B7E434 /* Kassandra.framework in Frameworks */,
+				BCB01EB01D75005D00B7E434 /* Kitura.framework in Frameworks */,
+				BCB01EB11D75005D00B7E434 /* KituraNet.framework in Frameworks */,
+				BCB01EB21D75005D00B7E434 /* KituraSys.framework in Frameworks */,
+				BCB01EB31D75005D00B7E434 /* KituraTemplateEngine.framework in Frameworks */,
+				BCB01EB41D75005D00B7E434 /* LoggerAPI.framework in Frameworks */,
+				BCB01EB51D75005D00B7E434 /* Socket.framework in Frameworks */,
+				BCB01EB61D75005D00B7E434 /* SSLService.framework in Frameworks */,
+				BCB01EB71D75005D00B7E434 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB01E9C1D75001B00B7E434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB01EA01D75001B00B7E434 /* TwitterCloneFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE696241D74DC060091A82F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE696721D74EB500091A82F /* SwiftyJSON.framework in Frameworks */,
+				BCE696561D74EB500091A82F /* Socket.framework in Frameworks */,
+				BCE6966E1D74EB500091A82F /* KituraNet.framework in Frameworks */,
+				BCE6966A1D74EB500091A82F /* CHTTPParser.framework in Frameworks */,
+				BCE696621D74EB500091A82F /* LoggerAPI.framework in Frameworks */,
+				BCE696661D74EB500091A82F /* KituraSys.framework in Frameworks */,
+				BCE6965E1D74EB500091A82F /* Kassandra.framework in Frameworks */,
+				BCE6965A1D74EB500091A82F /* SSLService.framework in Frameworks */,
+				BCE6967A1D74EB510091A82F /* Kitura.framework in Frameworks */,
+				BCE696761D74EB500091A82F /* KituraTemplateEngine.framework in Frameworks */,
+				BCB01ED91D7501C200B7E434 /* TwitterCloneFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_CHTTPParser" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_Kassandra" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socket_via_Kassandra /* Socket.framework in Frameworks */,
+				_LinkFileRef_SSLService_via_Kassandra /* SSLService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_Kitura" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_LoggerAPI_via_Kitura /* LoggerAPI.framework in Frameworks */,
+				_LinkFileRef_KituraSys_via_Kitura /* KituraSys.framework in Frameworks */,
+				_LinkFileRef_Socket_via_Kitura /* Socket.framework in Frameworks */,
+				_LinkFileRef_CHTTPParser_via_Kitura /* CHTTPParser.framework in Frameworks */,
+				_LinkFileRef_KituraNet_via_Kitura /* KituraNet.framework in Frameworks */,
+				_LinkFileRef_SwiftyJSON_via_Kitura /* SwiftyJSON.framework in Frameworks */,
+				_LinkFileRef_KituraTemplateEngine_via_Kitura /* KituraTemplateEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_KituraNet" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_LoggerAPI_via_KituraNet /* LoggerAPI.framework in Frameworks */,
+				_LinkFileRef_KituraSys_via_KituraNet /* KituraSys.framework in Frameworks */,
+				_LinkFileRef_Socket_via_KituraNet /* Socket.framework in Frameworks */,
+				_LinkFileRef_CHTTPParser_via_KituraNet /* CHTTPParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_KituraSys" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_LoggerAPI_via_KituraSys /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_KituraTemplateEngine" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_LoggerAPI" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SSLService" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socket_via_SSLService /* Socket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_Socket" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SwiftyJSON" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_TwitterClone" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				BCB01EDD1D7501D200B7E434 /* TwitterCloneFramework.framework in Frameworks */,
+				_LinkFileRef_Socket_via_TwitterClone /* Socket.framework in Frameworks */,
+				_LinkFileRef_SSLService_via_TwitterClone /* SSLService.framework in Frameworks */,
+				_LinkFileRef_Kassandra_via_TwitterClone /* Kassandra.framework in Frameworks */,
+				_LinkFileRef_LoggerAPI_via_TwitterClone /* LoggerAPI.framework in Frameworks */,
+				_LinkFileRef_KituraSys_via_TwitterClone /* KituraSys.framework in Frameworks */,
+				_LinkFileRef_CHTTPParser_via_TwitterClone /* CHTTPParser.framework in Frameworks */,
+				_LinkFileRef_KituraNet_via_TwitterClone /* KituraNet.framework in Frameworks */,
+				_LinkFileRef_SwiftyJSON_via_TwitterClone /* SwiftyJSON.framework in Frameworks */,
+				_LinkFileRef_KituraTemplateEngine_via_TwitterClone /* KituraTemplateEngine.framework in Frameworks */,
+				_LinkFileRef_Kitura_via_TwitterClone /* Kitura.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_TwitterCloneTests" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socket_via_TwitterCloneTests /* Socket.framework in Frameworks */,
+				_LinkFileRef_SSLService_via_TwitterCloneTests /* SSLService.framework in Frameworks */,
+				_LinkFileRef_Kassandra_via_TwitterCloneTests /* Kassandra.framework in Frameworks */,
+				_LinkFileRef_LoggerAPI_via_TwitterCloneTests /* LoggerAPI.framework in Frameworks */,
+				_LinkFileRef_KituraSys_via_TwitterCloneTests /* KituraSys.framework in Frameworks */,
+				_LinkFileRef_CHTTPParser_via_TwitterCloneTests /* CHTTPParser.framework in Frameworks */,
+				_LinkFileRef_KituraNet_via_TwitterCloneTests /* KituraNet.framework in Frameworks */,
+				_LinkFileRef_SwiftyJSON_via_TwitterCloneTests /* SwiftyJSON.framework in Frameworks */,
+				_LinkFileRef_KituraTemplateEngine_via_TwitterCloneTests /* KituraTemplateEngine.framework in Frameworks */,
+				_LinkFileRef_Kitura_via_TwitterCloneTests /* Kitura.framework in Frameworks */,
+				_LinkFileRef_TwitterClone_via_TwitterCloneTests /* TwitterClone in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCB01E981D75001A00B7E434 /* TwitterCloneFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BCB01E991D75001A00B7E434 /* TwitterCloneFramework.h */,
+				BCB01E9A1D75001A00B7E434 /* Info.plist */,
+			);
+			path = TwitterCloneFramework;
+			sourceTree = "<group>";
+		};
+		BCB01EA31D75001B00B7E434 /* TwitterCloneFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCB01EA41D75001B00B7E434 /* TwitterCloneFrameworkTests.swift */,
+				BCB01EA61D75001B00B7E434 /* Info.plist */,
+			);
+			path = TwitterCloneFrameworkTests;
+			sourceTree = "<group>";
+		};
+		BCCC5FC41D73FBE900875EF4 /* JSON conversion */ = {
+			isa = PBXGroup;
+			children = (
+				BCCC5FC51D73FC3A00875EF4 /* ConvertibleToJSONDictionary.swift */,
+				BCE6961D1D74C0270091A82F /* ConvertibleFromJSON.swift */,
+				BCE6961F1D74C16F0091A82F /* NamingForClientJSONConversion.swift */,
+			);
+			name = "JSON conversion";
+			sourceTree = "<group>";
+		};
+		BCCC5FC71D73FCFB00875EF4 /* Modelling for Cassandra */ = {
+			isa = PBXGroup;
+			children = (
+				BCE696211D74C2790091A82F /* NamingFieldsForCassandra.swift */,
+				BCF1ADC11D751ADE0020B18A /* AdaptingToModels.swift */,
+			);
+			name = "Modelling for Cassandra";
+			sourceTree = "<group>";
+		};
+		BCE696281D74DC060091A82F /* TwitterCloneCocoaApp */ = {
+			isa = PBXGroup;
+			children = (
+				BCE696291D74DC060091A82F /* AppDelegate.swift */,
+				BCE6962B1D74DC060091A82F /* ViewController.swift */,
+				BCE6962D1D74DC060091A82F /* Assets.xcassets */,
+				BCE6962F1D74DC060091A82F /* Main.storyboard */,
+				BCE696321D74DC060091A82F /* Info.plist */,
+			);
+			path = TwitterCloneCocoaApp;
+			sourceTree = "<group>";
+		};
+		BCF1ADC71D7534920020B18A /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BCF1ADC31D75348D0020B18A /* LclJSONSerialization.swift */,
+				BCF1ADC41D75348D0020B18A /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		Dependencies_ /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BCF1ADC71D7534920020B18A /* SwiftyJSON */,
+				"_______Group_KituraSys" /* KituraSys */,
+				"_______Group_SSLService" /* SSLService */,
+				"_______Group_KituraNet" /* KituraNet */,
+				"_______Group_Socket" /* Socket */,
+				"_______Group_Kassandra" /* Kassandra */,
+				"_______Group_Kitura" /* Kitura */,
+				"_______Group_CHTTPParser" /* CHTTPParser */,
+				"_______Group_LoggerAPI" /* LoggerAPI */,
+				"_______Group_KituraTemplateEngine" /* KituraTemplateEngine */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_TwitterCloneTests" /* TwitterCloneTests.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				Dependencies_ /* Dependencies */,
+				"_______Tests_" /* Tests */,
+				BCE696281D74DC060091A82F /* TwitterCloneCocoaApp */,
+				BCB01E981D75001A00B7E434 /* TwitterCloneFramework */,
+				BCB01EA31D75001B00B7E434 /* TwitterCloneFrameworkTests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_Socket" /* Socket.framework */,
+				"_____Product_SSLService" /* SSLService.framework */,
+				"_____Product_Kassandra" /* Kassandra.framework */,
+				"_____Product_LoggerAPI" /* LoggerAPI.framework */,
+				"_____Product_KituraSys" /* KituraSys.framework */,
+				"_____Product_CHTTPParser" /* CHTTPParser.framework */,
+				"_____Product_KituraNet" /* KituraNet.framework */,
+				"_____Product_SwiftyJSON" /* SwiftyJSON.framework */,
+				"_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */,
+				"_____Product_Kitura" /* Kitura.framework */,
+				"_____Product_TwitterClone" /* TwitterClone */,
+				BCE696271D74DC060091A82F /* TwitterCloneCocoaApp.app */,
+				BCB01E971D75001A00B7E434 /* TwitterCloneFramework.framework */,
+				BCB01E9F1D75001B00B7E434 /* TwitterCloneFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_TwitterClone.xcodeproj/Configs/Project.xcconfig /* TwitterClone.xcodeproj/Configs/Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_TwitterClone" /* TwitterClone */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_CHTTPParser" /* CHTTPParser */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c */,
+				"__PBXFileRef_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/utils.c" /* utils.c */,
+			);
+			name = CHTTPParser;
+			path = "Packages/CHTTPParser-0.3.0/Sources/CHTTPParser";
+			sourceTree = "<group>";
+		};
+		"_______Group_Kassandra" /* Kassandra */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Config.swift" /* Config.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Definitions.swift" /* Definitions.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Delete.swift" /* Delete.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Event.swift" /* Event.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Extensions.swift" /* Extensions.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Insert.swift" /* Insert.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Kassandra.swift" /* Kassandra.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/KassandraDelegate.swift" /* KassandraDelegate.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Kind.swift" /* Kind.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Model.swift" /* Model.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Query.swift" /* Query.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/QueryBuilder.swift" /* QueryBuilder.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Raw.swift" /* Raw.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Request.swift" /* Request.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Result.swift" /* Result.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Select.swift" /* Select.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Table.swift" /* Table.swift */,
+				"__PBXFileRef_Packages/Kassandra-0.1.1/Sources/Update.swift" /* Update.swift */,
+			);
+			name = Kassandra;
+			path = "Packages/Kassandra-0.1.1/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_Kitura" /* Kitura */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Error.swift" /* Error.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/FileResourceServer.swift" /* FileResourceServer.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Headers.swift" /* Headers.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/HTTPVersion.swift" /* HTTPVersion.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/InternalError.swift" /* InternalError.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/JSONPError.swift" /* JSONPError.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Kitura.swift" /* Kitura.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/LinkParameter.swift" /* LinkParameter.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/MimeTypeAcceptor.swift" /* MimeTypeAcceptor.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/Router.swift" /* Router.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouteRegex.swift" /* RouteRegex.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterElement.swift" /* RouterElement.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterElementWalker.swift" /* RouterElementWalker.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHandler.swift" /* RouterHandler.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs+Error.swift" /* RouterHTTPVerbs+Error.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs_generated.swift" /* RouterHTTPVerbs_generated.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMethod.swift" /* RouterMethod.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddleware.swift" /* RouterMiddleware.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareGenerator.swift" /* RouterMiddlewareGenerator.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareWalker.swift" /* RouterMiddlewareWalker.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterRequest.swift" /* RouterRequest.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/RouterResponse.swift" /* RouterResponse.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/TemplatingError.swift" /* TemplatingError.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParser.swift" /* bodyParser/BodyParser.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift" /* bodyParser/BodyParserProtocol.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/JSONBodyParser.swift" /* bodyParser/JSONBodyParser.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift" /* bodyParser/MultiPartBodyParser.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/ParsedBody.swift" /* bodyParser/ParsedBody.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/Part.swift" /* bodyParser/Part.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/TextBodyParser.swift" /* bodyParser/TextBodyParser.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift" /* bodyParser/URLEncodedBodyParser.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/contentType/ContentType.swift" /* contentType/ContentType.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/contentType/types.swift" /* contentType/types.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift" /* staticFileServer/CacheRelatedHeadersSetter.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift" /* staticFileServer/CompositeHeadersSetter.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/FileServer.swift" /* staticFileServer/FileServer.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift" /* staticFileServer/ResponseHeadersSetter.swift */,
+				"__PBXFileRef_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/StaticFileServer.swift" /* staticFileServer/StaticFileServer.swift */,
+			);
+			name = Kitura;
+			path = "Packages/Kitura-0.28.0/Sources/Kitura";
+			sourceTree = "<group>";
+		};
+		"_______Group_KituraNet" /* KituraNet */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/BufferList.swift" /* BufferList.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientRequest.swift" /* ClientRequest.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientResponse.swift" /* ClientResponse.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/Error.swift" /* Error.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HeadersContainer.swift" /* HeadersContainer.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketHandler.swift" /* IncomingSocketHandler.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketManager.swift" /* IncomingSocketManager.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketProcessor.swift" /* IncomingSocketProcessor.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ListenerGroup.swift" /* ListenerGroup.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/PseudoSynchronousReader.swift" /* PseudoSynchronousReader.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerDelegate.swift" /* ServerDelegate.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerRequest.swift" /* ServerRequest.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerResponse.swift" /* ServerResponse.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/SPIUtils.swift" /* SPIUtils.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGI.swift" /* FastCGI/FastCGI.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordCreate.swift" /* FastCGI/FastCGIRecordCreate.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordParser.swift" /* FastCGI/FastCGIRecordParser.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServer.swift" /* FastCGI/FastCGIServer.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerRequest.swift" /* FastCGI/FastCGIServerRequest.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerResponse.swift" /* FastCGI/FastCGIServerResponse.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTP.swift" /* HTTP/HTTP.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPIncomingMessage.swift" /* HTTP/HTTPIncomingMessage.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServer.swift" /* HTTP/HTTPServer.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerRequest.swift" /* HTTP/HTTPServerRequest.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerResponse.swift" /* HTTP/HTTPServerResponse.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/IncomingHTTPSocketProcessor.swift" /* HTTP/IncomingHTTPSocketProcessor.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParser.swift" /* HTTPParser/HTTPParser.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParserStatus.swift" /* HTTPParser/HTTPParserStatus.swift */,
+				"__PBXFileRef_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/URLParser.swift" /* HTTPParser/URLParser.swift */,
+			);
+			name = KituraNet;
+			path = "Packages/Kitura-net-0.28.0/Sources/KituraNet";
+			sourceTree = "<group>";
+		};
+		"_______Group_KituraSys" /* KituraSys */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Kitura-Sys-0.28.0/Sources/KituraSys/StringUtils.swift" /* StringUtils.swift */,
+			);
+			name = KituraSys;
+			path = "Packages/Kitura-Sys-0.28.0/Sources/KituraSys";
+			sourceTree = "<group>";
+		};
+		"_______Group_KituraTemplateEngine" /* KituraTemplateEngine */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Kitura-TemplateEngine-0.26.0/Sources/KituraTemplateEngine/TemplateEngine.swift" /* TemplateEngine.swift */,
+			);
+			name = KituraTemplateEngine;
+			path = "Packages/Kitura-TemplateEngine-0.26.0/Sources/KituraTemplateEngine";
+			sourceTree = "<group>";
+		};
+		"_______Group_LoggerAPI" /* LoggerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/LoggerAPI-0.10.0/Sources/LoggerAPI/Logger.swift" /* Logger.swift */,
+			);
+			name = LoggerAPI;
+			path = "Packages/LoggerAPI-0.10.0/Sources/LoggerAPI";
+			sourceTree = "<group>";
+		};
+		"_______Group_SSLService" /* SSLService */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/SSLService-0.10.3/Sources/SSLService.swift" /* SSLService.swift */,
+			);
+			name = SSLService;
+			path = "Packages/SSLService-0.10.3/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_Socket" /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socket-0.10.3/Sources/Socket.swift" /* Socket.swift */,
+				"__PBXFileRef_Packages/Socket-0.10.3/Sources/SocketProtocols.swift" /* SocketProtocols.swift */,
+				"__PBXFileRef_Packages/Socket-0.10.3/Sources/SocketUtils.swift" /* SocketUtils.swift */,
+			);
+			name = Socket;
+			path = "Packages/Socket-0.10.3/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_TwitterClone" /* TwitterClone */ = {
+			isa = PBXGroup;
+			children = (
+				BCCC5FC71D73FCFB00875EF4 /* Modelling for Cassandra */,
+				BCCC5FC41D73FBE900875EF4 /* JSON conversion */,
+				__PBXFileRef_Sources/main.swift /* main.swift */,
+				__PBXFileRef_Sources/TwitterClone.swift /* TwitterClone.swift */,
+				BCCC5FC01D73FB0500875EF4 /* TwitterCloneProtocol.swift */,
+				BCCC5FC21D73FB7900875EF4 /* OriginalTwitterClone.swift */,
+				BCCC5FCE1D73FEA300875EF4 /* ModelStructures.swift */,
+				BCCC5FD21D74AF7500875EF4 /* applyOperator.swift */,
+				BCE696531D74DC400091A82F /* KituraDriver.swift */,
+			);
+			name = TwitterClone;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_TwitterCloneTests" /* TwitterCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/TwitterCloneTests/TwitterCloneTests.swift /* TwitterCloneTests.swift */,
+			);
+			name = TwitterCloneTests;
+			path = Tests/TwitterCloneTests;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_TwitterCloneTests" /* TwitterCloneTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BCB01E941D75001A00B7E434 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BCB01E961D75001A00B7E434 /* TwitterCloneFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB01EAC1D75001B00B7E434 /* Build configuration list for PBXNativeTarget "TwitterCloneFramework" */;
+			buildPhases = (
+				BC4736C81D75062C008B0F4C /* Run Script */,
+				BCB01E921D75001A00B7E434 /* Sources */,
+				BCB01E931D75001A00B7E434 /* Frameworks */,
+				BCB01E941D75001A00B7E434 /* Headers */,
+				BCB01E951D75001A00B7E434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCB01EB91D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EBB1D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EBD1D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EBF1D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EC11D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EC31D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EC51D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EC71D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01EC91D75008B00B7E434 /* PBXTargetDependency */,
+				BCB01ECB1D75008B00B7E434 /* PBXTargetDependency */,
+			);
+			name = TwitterCloneFramework;
+			productName = TwitterCloneFramework;
+			productReference = BCB01E971D75001A00B7E434 /* TwitterCloneFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCB01E9E1D75001B00B7E434 /* TwitterCloneFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB01EAD1D75001B00B7E434 /* Build configuration list for PBXNativeTarget "TwitterCloneFrameworkTests" */;
+			buildPhases = (
+				BCB01E9B1D75001B00B7E434 /* Sources */,
+				BCB01E9C1D75001B00B7E434 /* Frameworks */,
+				BCB01E9D1D75001B00B7E434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCB01EA21D75001B00B7E434 /* PBXTargetDependency */,
+			);
+			name = TwitterCloneFrameworkTests;
+			productName = TwitterCloneFrameworkTests;
+			productReference = BCB01E9F1D75001B00B7E434 /* TwitterCloneFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCE696261D74DC060091A82F /* TwitterCloneCocoaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE696491D74DC070091A82F /* Build configuration list for PBXNativeTarget "TwitterCloneCocoaApp" */;
+			buildPhases = (
+				BCE696231D74DC060091A82F /* Sources */,
+				BCE696241D74DC060091A82F /* Frameworks */,
+				BCE696251D74DC060091A82F /* Resources */,
+				BCE6967E1D74EB510091A82F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCE696591D74EB500091A82F /* PBXTargetDependency */,
+				BCE6965D1D74EB500091A82F /* PBXTargetDependency */,
+				BCE696611D74EB500091A82F /* PBXTargetDependency */,
+				BCE696651D74EB500091A82F /* PBXTargetDependency */,
+				BCE696691D74EB500091A82F /* PBXTargetDependency */,
+				BCE6966D1D74EB500091A82F /* PBXTargetDependency */,
+				BCE696711D74EB500091A82F /* PBXTargetDependency */,
+				BCE696751D74EB500091A82F /* PBXTargetDependency */,
+				BCE696791D74EB510091A82F /* PBXTargetDependency */,
+				BCE6967D1D74EB510091A82F /* PBXTargetDependency */,
+				BCB01EDC1D7501C200B7E434 /* PBXTargetDependency */,
+			);
+			name = TwitterCloneCocoaApp;
+			productName = TwitterCloneCocoaApp;
+			productReference = BCE696271D74DC060091A82F /* TwitterCloneCocoaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		"______Target_CHTTPParser" /* CHTTPParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_CHTTPParser" /* Build configuration list for PBXNativeTarget "CHTTPParser" */;
+			buildPhases = (
+				CompilePhase_CHTTPParser /* Sources */,
+				"___LinkPhase_CHTTPParser" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHTTPParser;
+			productName = CHTTPParser;
+			productReference = "_____Product_CHTTPParser" /* CHTTPParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_Kassandra" /* Kassandra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Kassandra" /* Build configuration list for PBXNativeTarget "Kassandra" */;
+			buildPhases = (
+				CompilePhase_Kassandra /* Sources */,
+				"___LinkPhase_Kassandra" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socket /* PBXTargetDependency */,
+				__Dependency_SSLService /* PBXTargetDependency */,
+			);
+			name = Kassandra;
+			productName = Kassandra;
+			productReference = "_____Product_Kassandra" /* Kassandra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_Kitura" /* Kitura */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Kitura" /* Build configuration list for PBXNativeTarget "Kitura" */;
+			buildPhases = (
+				CompilePhase_Kitura /* Sources */,
+				"___LinkPhase_Kitura" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_LoggerAPI /* PBXTargetDependency */,
+				__Dependency_KituraSys /* PBXTargetDependency */,
+				__Dependency_Socket /* PBXTargetDependency */,
+				__Dependency_CHTTPParser /* PBXTargetDependency */,
+				__Dependency_KituraNet /* PBXTargetDependency */,
+				__Dependency_SwiftyJSON /* PBXTargetDependency */,
+				__Dependency_KituraTemplateEngine /* PBXTargetDependency */,
+			);
+			name = Kitura;
+			productName = Kitura;
+			productReference = "_____Product_Kitura" /* Kitura.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_KituraNet" /* KituraNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_KituraNet" /* Build configuration list for PBXNativeTarget "KituraNet" */;
+			buildPhases = (
+				CompilePhase_KituraNet /* Sources */,
+				"___LinkPhase_KituraNet" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_LoggerAPI /* PBXTargetDependency */,
+				__Dependency_KituraSys /* PBXTargetDependency */,
+				__Dependency_Socket /* PBXTargetDependency */,
+				__Dependency_CHTTPParser /* PBXTargetDependency */,
+			);
+			name = KituraNet;
+			productName = KituraNet;
+			productReference = "_____Product_KituraNet" /* KituraNet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_KituraSys" /* KituraSys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_KituraSys" /* Build configuration list for PBXNativeTarget "KituraSys" */;
+			buildPhases = (
+				CompilePhase_KituraSys /* Sources */,
+				"___LinkPhase_KituraSys" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_LoggerAPI /* PBXTargetDependency */,
+			);
+			name = KituraSys;
+			productName = KituraSys;
+			productReference = "_____Product_KituraSys" /* KituraSys.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_KituraTemplateEngine" /* KituraTemplateEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_KituraTemplateEngine" /* Build configuration list for PBXNativeTarget "KituraTemplateEngine" */;
+			buildPhases = (
+				CompilePhase_KituraTemplateEngine /* Sources */,
+				"___LinkPhase_KituraTemplateEngine" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraTemplateEngine;
+			productName = KituraTemplateEngine;
+			productReference = "_____Product_KituraTemplateEngine" /* KituraTemplateEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_LoggerAPI" /* LoggerAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_LoggerAPI" /* Build configuration list for PBXNativeTarget "LoggerAPI" */;
+			buildPhases = (
+				CompilePhase_LoggerAPI /* Sources */,
+				"___LinkPhase_LoggerAPI" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggerAPI;
+			productName = LoggerAPI;
+			productReference = "_____Product_LoggerAPI" /* LoggerAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SSLService" /* SSLService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SSLService" /* Build configuration list for PBXNativeTarget "SSLService" */;
+			buildPhases = (
+				CompilePhase_SSLService /* Sources */,
+				"___LinkPhase_SSLService" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socket /* PBXTargetDependency */,
+			);
+			name = SSLService;
+			productName = SSLService;
+			productReference = "_____Product_SSLService" /* SSLService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_Socket" /* Socket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Socket" /* Build configuration list for PBXNativeTarget "Socket" */;
+			buildPhases = (
+				CompilePhase_Socket /* Sources */,
+				"___LinkPhase_Socket" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Socket;
+			productName = Socket;
+			productReference = "_____Product_Socket" /* Socket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SwiftyJSON" /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SwiftyJSON" /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				CompilePhase_SwiftyJSON /* Sources */,
+				"___LinkPhase_SwiftyJSON" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = "_____Product_SwiftyJSON" /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_TwitterClone" /* TwitterClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_TwitterClone" /* Build configuration list for PBXNativeTarget "TwitterClone" */;
+			buildPhases = (
+				CompilePhase_TwitterClone /* Sources */,
+				"___LinkPhase_TwitterClone" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socket /* PBXTargetDependency */,
+				__Dependency_SSLService /* PBXTargetDependency */,
+				__Dependency_Kassandra /* PBXTargetDependency */,
+				__Dependency_LoggerAPI /* PBXTargetDependency */,
+				__Dependency_KituraSys /* PBXTargetDependency */,
+				__Dependency_CHTTPParser /* PBXTargetDependency */,
+				__Dependency_KituraNet /* PBXTargetDependency */,
+				__Dependency_SwiftyJSON /* PBXTargetDependency */,
+				__Dependency_KituraTemplateEngine /* PBXTargetDependency */,
+				__Dependency_Kitura /* PBXTargetDependency */,
+			);
+			name = TwitterClone;
+			productName = TwitterClone;
+			productReference = "_____Product_TwitterClone" /* TwitterClone */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_TwitterCloneTests" /* TwitterCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_TwitterCloneTests" /* Build configuration list for PBXNativeTarget "TwitterCloneTests" */;
+			buildPhases = (
+				CompilePhase_TwitterCloneTests /* Sources */,
+				"___LinkPhase_TwitterCloneTests" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socket /* PBXTargetDependency */,
+				__Dependency_SSLService /* PBXTargetDependency */,
+				__Dependency_Kassandra /* PBXTargetDependency */,
+				__Dependency_LoggerAPI /* PBXTargetDependency */,
+				__Dependency_KituraSys /* PBXTargetDependency */,
+				__Dependency_CHTTPParser /* PBXTargetDependency */,
+				__Dependency_KituraNet /* PBXTargetDependency */,
+				__Dependency_SwiftyJSON /* PBXTargetDependency */,
+				__Dependency_KituraTemplateEngine /* PBXTargetDependency */,
+				__Dependency_Kitura /* PBXTargetDependency */,
+				__Dependency_TwitterClone /* PBXTargetDependency */,
+				BCE6968D1D74EE550091A82F /* PBXTargetDependency */,
+			);
+			name = TwitterCloneTests;
+			productName = TwitterCloneTests;
+			productReference = "_____Product_TwitterCloneTests" /* TwitterCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					BCB01E961D75001A00B7E434 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VP33SENQ3F;
+						ProvisioningStyle = Automatic;
+					};
+					BCB01E9E1D75001B00B7E434 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VP33SENQ3F;
+						ProvisioningStyle = Automatic;
+					};
+					BCE696261D74DC060091A82F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VP33SENQ3F;
+						ProvisioningStyle = Automatic;
+					};
+					"______Target_CHTTPParser" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_Kassandra" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_Kitura" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_KituraNet" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_KituraSys" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_KituraTemplateEngine" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_LoggerAPI" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_SSLService" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_Socket" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_SwiftyJSON" = {
+						DevelopmentTeam = VP33SENQ3F;
+					};
+					"______Target_TwitterCloneTests" = {
+						TestTargetID = BCE696261D74DC060091A82F;
+					};
+				};
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "TwitterClone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_Socket" /* Socket */,
+				"______Target_SSLService" /* SSLService */,
+				"______Target_Kassandra" /* Kassandra */,
+				"______Target_LoggerAPI" /* LoggerAPI */,
+				"______Target_KituraSys" /* KituraSys */,
+				"______Target_CHTTPParser" /* CHTTPParser */,
+				"______Target_KituraNet" /* KituraNet */,
+				"______Target_SwiftyJSON" /* SwiftyJSON */,
+				"______Target_KituraTemplateEngine" /* KituraTemplateEngine */,
+				"______Target_Kitura" /* Kitura */,
+				"______Target_TwitterClone" /* TwitterClone */,
+				"______Target_TwitterCloneTests" /* TwitterCloneTests */,
+				BCE696261D74DC060091A82F /* TwitterCloneCocoaApp */,
+				BCB01E961D75001A00B7E434 /* TwitterCloneFramework */,
+				BCB01E9E1D75001B00B7E434 /* TwitterCloneFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCB01E951D75001A00B7E434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB01E9D1D75001B00B7E434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE696251D74DC060091A82F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE6962E1D74DC060091A82F /* Assets.xcassets in Resources */,
+				BCE696311D74DC060091A82F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC4736C81D75062C008B0F4C /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "printenv >/Users/ungar/env";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCB01E921D75001A00B7E434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB01ED71D7500A200B7E434 /* applyOperator.swift in Sources */,
+				BCB01ED01D7500A200B7E434 /* ConvertibleToJSONDictionary.swift in Sources */,
+				BCB01ED11D7500A200B7E434 /* ConvertibleFromJSON.swift in Sources */,
+				BCB01ED81D7500A200B7E434 /* KituraDriver.swift in Sources */,
+				BCB01ECF1D7500A200B7E434 /* NamingFieldsForCassandra.swift in Sources */,
+				BCB01ED21D7500A200B7E434 /* NamingForClientJSONConversion.swift in Sources */,
+				BCB01ED31D7500A200B7E434 /* TwitterClone.swift in Sources */,
+				BCB01ED41D7500A200B7E434 /* TwitterCloneProtocol.swift in Sources */,
+				BCF1ADC51D75348D0020B18A /* LclJSONSerialization.swift in Sources */,
+				BCB01ED51D7500A200B7E434 /* OriginalTwitterClone.swift in Sources */,
+				BCF1ADC21D751ADE0020B18A /* AdaptingToModels.swift in Sources */,
+				BCF1ADC61D75348D0020B18A /* SwiftyJSON.swift in Sources */,
+				BCB01ED61D7500A200B7E434 /* ModelStructures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB01E9B1D75001B00B7E434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB01EA51D75001B00B7E434 /* TwitterCloneFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE696231D74DC060091A82F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE6962A1D74DC060091A82F /* AppDelegate.swift in Sources */,
+				BCE6962C1D74DC060091A82F /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_CHTTPParser /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c in Sources */,
+				"__src_cc_ref_Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/utils.c" /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_Kassandra /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Config.swift" /* Config.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Definitions.swift" /* Definitions.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Delete.swift" /* Delete.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Event.swift" /* Event.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Extensions.swift" /* Extensions.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Insert.swift" /* Insert.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Kassandra.swift" /* Kassandra.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/KassandraDelegate.swift" /* KassandraDelegate.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Kind.swift" /* Kind.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Model.swift" /* Model.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Query.swift" /* Query.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/QueryBuilder.swift" /* QueryBuilder.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Raw.swift" /* Raw.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Request.swift" /* Request.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Result.swift" /* Result.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Select.swift" /* Select.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Table.swift" /* Table.swift in Sources */,
+				"__src_cc_ref_Packages/Kassandra-0.1.1/Sources/Update.swift" /* Update.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_Kitura /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Error.swift" /* Error.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/FileResourceServer.swift" /* FileResourceServer.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Headers.swift" /* Headers.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/HTTPVersion.swift" /* HTTPVersion.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/InternalError.swift" /* InternalError.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/JSONPError.swift" /* JSONPError.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Kitura.swift" /* Kitura.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/LinkParameter.swift" /* LinkParameter.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/MimeTypeAcceptor.swift" /* MimeTypeAcceptor.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/Router.swift" /* Router.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouteRegex.swift" /* RouteRegex.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterElement.swift" /* RouterElement.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterElementWalker.swift" /* RouterElementWalker.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterHandler.swift" /* RouterHandler.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs+Error.swift" /* RouterHTTPVerbs+Error.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterHTTPVerbs_generated.swift" /* RouterHTTPVerbs_generated.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMethod.swift" /* RouterMethod.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddleware.swift" /* RouterMiddleware.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareGenerator.swift" /* RouterMiddlewareGenerator.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterMiddlewareWalker.swift" /* RouterMiddlewareWalker.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterRequest.swift" /* RouterRequest.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/RouterResponse.swift" /* RouterResponse.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/TemplatingError.swift" /* TemplatingError.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParser.swift" /* bodyParser/BodyParser.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift" /* bodyParser/BodyParserProtocol.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/JSONBodyParser.swift" /* bodyParser/JSONBodyParser.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift" /* bodyParser/MultiPartBodyParser.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/ParsedBody.swift" /* bodyParser/ParsedBody.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/Part.swift" /* bodyParser/Part.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/TextBodyParser.swift" /* bodyParser/TextBodyParser.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift" /* bodyParser/URLEncodedBodyParser.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/contentType/ContentType.swift" /* contentType/ContentType.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/contentType/types.swift" /* contentType/types.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift" /* staticFileServer/CacheRelatedHeadersSetter.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift" /* staticFileServer/CompositeHeadersSetter.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/FileServer.swift" /* staticFileServer/FileServer.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift" /* staticFileServer/ResponseHeadersSetter.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-0.28.0/Sources/Kitura/staticFileServer/StaticFileServer.swift" /* staticFileServer/StaticFileServer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_KituraNet /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/BufferList.swift" /* BufferList.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientRequest.swift" /* ClientRequest.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ClientResponse.swift" /* ClientResponse.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/Error.swift" /* Error.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HeadersContainer.swift" /* HeadersContainer.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketHandler.swift" /* IncomingSocketHandler.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketManager.swift" /* IncomingSocketManager.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/IncomingSocketProcessor.swift" /* IncomingSocketProcessor.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ListenerGroup.swift" /* ListenerGroup.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/PseudoSynchronousReader.swift" /* PseudoSynchronousReader.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerDelegate.swift" /* ServerDelegate.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerRequest.swift" /* ServerRequest.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/ServerResponse.swift" /* ServerResponse.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/SPIUtils.swift" /* SPIUtils.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGI.swift" /* FastCGI/FastCGI.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordCreate.swift" /* FastCGI/FastCGIRecordCreate.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIRecordParser.swift" /* FastCGI/FastCGIRecordParser.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServer.swift" /* FastCGI/FastCGIServer.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerRequest.swift" /* FastCGI/FastCGIServerRequest.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/FastCGI/FastCGIServerResponse.swift" /* FastCGI/FastCGIServerResponse.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTP.swift" /* HTTP/HTTP.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPIncomingMessage.swift" /* HTTP/HTTPIncomingMessage.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServer.swift" /* HTTP/HTTPServer.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerRequest.swift" /* HTTP/HTTPServerRequest.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/HTTPServerResponse.swift" /* HTTP/HTTPServerResponse.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTP/IncomingHTTPSocketProcessor.swift" /* HTTP/IncomingHTTPSocketProcessor.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParser.swift" /* HTTPParser/HTTPParser.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/HTTPParserStatus.swift" /* HTTPParser/HTTPParserStatus.swift in Sources */,
+				"__src_cc_ref_Packages/Kitura-net-0.28.0/Sources/KituraNet/HTTPParser/URLParser.swift" /* HTTPParser/URLParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_KituraSys /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Kitura-Sys-0.28.0/Sources/KituraSys/StringUtils.swift" /* StringUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_KituraTemplateEngine /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Kitura-TemplateEngine-0.26.0/Sources/KituraTemplateEngine/TemplateEngine.swift" /* TemplateEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_LoggerAPI /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/LoggerAPI-0.10.0/Sources/LoggerAPI/Logger.swift" /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SSLService /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/SSLService-0.10.3/Sources/SSLService.swift" /* SSLService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_Socket /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socket-0.10.3/Sources/Socket.swift" /* Socket.swift in Sources */,
+				"__src_cc_ref_Packages/Socket-0.10.3/Sources/SocketProtocols.swift" /* SocketProtocols.swift in Sources */,
+				"__src_cc_ref_Packages/Socket-0.10.3/Sources/SocketUtils.swift" /* SocketUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SwiftyJSON /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				BCF1ADC81D7534AF0020B18A /* LclJSONSerialization.swift in Sources */,
+				BCF1ADC91D7534AF0020B18A /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_TwitterClone /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Sources/main.swift /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_TwitterCloneTests /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/TwitterCloneTests/TwitterCloneTests.swift /* TwitterCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCB01EA21D75001B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB01E961D75001A00B7E434 /* TwitterCloneFramework */;
+			targetProxy = BCB01EA11D75001B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EB91D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Socket" /* Socket */;
+			targetProxy = BCB01EB81D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EBB1D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SSLService" /* SSLService */;
+			targetProxy = BCB01EBA1D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EBD1D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Kassandra" /* Kassandra */;
+			targetProxy = BCB01EBC1D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EBF1D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_LoggerAPI" /* LoggerAPI */;
+			targetProxy = BCB01EBE1D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EC11D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraSys" /* KituraSys */;
+			targetProxy = BCB01EC01D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EC31D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_CHTTPParser" /* CHTTPParser */;
+			targetProxy = BCB01EC21D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EC51D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraNet" /* KituraNet */;
+			targetProxy = BCB01EC41D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EC71D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = BCB01EC61D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EC91D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraTemplateEngine" /* KituraTemplateEngine */;
+			targetProxy = BCB01EC81D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01ECB1D75008B00B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Kitura" /* Kitura */;
+			targetProxy = BCB01ECA1D75008B00B7E434 /* PBXContainerItemProxy */;
+		};
+		BCB01EDC1D7501C200B7E434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB01E961D75001A00B7E434 /* TwitterCloneFramework */;
+			targetProxy = BCB01EDB1D7501C200B7E434 /* PBXContainerItemProxy */;
+		};
+		BCE696591D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Socket" /* Socket */;
+			targetProxy = BCE696581D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE6965D1D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SSLService" /* SSLService */;
+			targetProxy = BCE6965C1D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE696611D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Kassandra" /* Kassandra */;
+			targetProxy = BCE696601D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE696651D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_LoggerAPI" /* LoggerAPI */;
+			targetProxy = BCE696641D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE696691D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraSys" /* KituraSys */;
+			targetProxy = BCE696681D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE6966D1D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_CHTTPParser" /* CHTTPParser */;
+			targetProxy = BCE6966C1D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE696711D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraNet" /* KituraNet */;
+			targetProxy = BCE696701D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE696751D74EB500091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = BCE696741D74EB500091A82F /* PBXContainerItemProxy */;
+		};
+		BCE696791D74EB510091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraTemplateEngine" /* KituraTemplateEngine */;
+			targetProxy = BCE696781D74EB510091A82F /* PBXContainerItemProxy */;
+		};
+		BCE6967D1D74EB510091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Kitura" /* Kitura */;
+			targetProxy = BCE6967C1D74EB510091A82F /* PBXContainerItemProxy */;
+		};
+		BCE6968D1D74EE550091A82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCE696261D74DC060091A82F /* TwitterCloneCocoaApp */;
+			targetProxy = BCE6968C1D74EE550091A82F /* PBXContainerItemProxy */;
+		};
+		__Dependency_CHTTPParser /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_CHTTPParser" /* CHTTPParser */;
+			targetProxy = BCCC5FB91D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_Kassandra /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Kassandra" /* Kassandra */;
+			targetProxy = BCCC5FBD1D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_Kitura /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Kitura" /* Kitura */;
+			targetProxy = BCCC5FBE1D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_KituraNet /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraNet" /* KituraNet */;
+			targetProxy = BCCC5FBA1D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_KituraSys /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraSys" /* KituraSys */;
+			targetProxy = BCCC5FB81D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_KituraTemplateEngine /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_KituraTemplateEngine" /* KituraTemplateEngine */;
+			targetProxy = BCCC5FBC1D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_LoggerAPI /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_LoggerAPI" /* LoggerAPI */;
+			targetProxy = BCCC5FB71D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SSLService /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SSLService" /* SSLService */;
+			targetProxy = BCCC5FB61D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_Socket /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Socket" /* Socket */;
+			targetProxy = BCCC5FB51D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SwiftyJSON /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = BCCC5FBB1D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+		__Dependency_TwitterClone /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_TwitterClone" /* TwitterClone */;
+			targetProxy = BCCC5FBF1D73F8CD00875EF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCE6962F1D74DC060091A82F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE696301D74DC060091A82F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCB01EA81D75001B00B7E434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TwitterCloneFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.TwitterCloneFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCB01EA91D75001B00B7E434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TwitterCloneFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.TwitterCloneFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCB01EAA1D75001B00B7E434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TwitterCloneFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.TwitterCloneFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCB01EAB1D75001B00B7E434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TwitterCloneFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.TwitterCloneFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BCE6964A1D74DC070091A82F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterCloneCocoaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.TwitterCloneCocoaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCE6964B1D74DC070091A82F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterCloneCocoaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = IBM.TwitterCloneCocoaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_CHTTPParser /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/CHTTPParser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MODULEMAP_FILE = TwitterClone.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CHTTPParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_Kassandra /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/Kassandra_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Kassandra;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_Kitura /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterClone.xcodeproj/Kitura_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Kitura;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_KituraNet /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterClone.xcodeproj/KituraNet_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraNet;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_KituraSys /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/KituraSys_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraSys;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_KituraTemplateEngine /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/KituraTemplateEngine_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraTemplateEngine;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_LoggerAPI /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/LoggerAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SSLService /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/SSLService_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SSLService;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_Socket /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/Socket_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SwiftyJSON /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_TwitterClone /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_TwitterCloneTests /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterClone.xcodeproj/TwitterCloneTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitterCloneCocoaApp.app/Contents/MacOS/TwitterCloneCocoaApp";
+			};
+			name = Release;
+		};
+		"___DebugConf_CHTTPParser" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/CHTTPParser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MODULEMAP_FILE = TwitterClone.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CHTTPParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_Kassandra" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/Kassandra_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Kassandra;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_Kitura" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterClone.xcodeproj/Kitura_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Kitura;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_KituraNet" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterClone.xcodeproj/KituraNet_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraNet;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_KituraSys" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/KituraSys_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraSys;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_KituraTemplateEngine" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/KituraTemplateEngine_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraTemplateEngine;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_LoggerAPI" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/LoggerAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SSLService" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/SSLService_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SSLService;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_Socket" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/Socket_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SwiftyJSON" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = VP33SENQ3F;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = TwitterClone.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_TwitterClone" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_TwitterCloneTests" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+				);
+				INFOPLIST_FILE = TwitterClone.xcodeproj/TwitterCloneTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitterCloneCocoaApp.app/Contents/MacOS/TwitterCloneCocoaApp";
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_TwitterClone.xcodeproj/Configs/Project.xcconfig /* TwitterClone.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/master/TwitterDemo/Packages/CommonCrypto-0.1.4",
+				);
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_TwitterClone.xcodeproj/Configs/Project.xcconfig /* TwitterClone.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/OpenSSL-0.3.0",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CCurl-0.2.1",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/TwitterDemo/Packages/CHTTPParser-0.3.0/Sources/CHTTPParser/include",
+					"/Volumes/Flashy_IBM/Users/IBM/code/TwitterDemo/master/TwitterDemo/Packages/CommonCrypto-0.1.4",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCB01EAC1D75001B00B7E434 /* Build configuration list for PBXNativeTarget "TwitterCloneFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB01EA81D75001B00B7E434 /* Debug */,
+				BCB01EA91D75001B00B7E434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCB01EAD1D75001B00B7E434 /* Build configuration list for PBXNativeTarget "TwitterCloneFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB01EAA1D75001B00B7E434 /* Debug */,
+				BCB01EAB1D75001B00B7E434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCE696491D74DC070091A82F /* Build configuration list for PBXNativeTarget "TwitterCloneCocoaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE6964A1D74DC070091A82F /* Debug */,
+				BCE6964B1D74DC070091A82F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"___RootConfs_" /* Build configuration list for PBXProject "TwitterClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_CHTTPParser" /* Build configuration list for PBXNativeTarget "CHTTPParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_CHTTPParser" /* Debug */,
+				_ReleaseConf_CHTTPParser /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Kassandra" /* Build configuration list for PBXNativeTarget "Kassandra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Kassandra" /* Debug */,
+				_ReleaseConf_Kassandra /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Kitura" /* Build configuration list for PBXNativeTarget "Kitura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Kitura" /* Debug */,
+				_ReleaseConf_Kitura /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_KituraNet" /* Build configuration list for PBXNativeTarget "KituraNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_KituraNet" /* Debug */,
+				_ReleaseConf_KituraNet /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_KituraSys" /* Build configuration list for PBXNativeTarget "KituraSys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_KituraSys" /* Debug */,
+				_ReleaseConf_KituraSys /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_KituraTemplateEngine" /* Build configuration list for PBXNativeTarget "KituraTemplateEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_KituraTemplateEngine" /* Debug */,
+				_ReleaseConf_KituraTemplateEngine /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_LoggerAPI" /* Build configuration list for PBXNativeTarget "LoggerAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_LoggerAPI" /* Debug */,
+				_ReleaseConf_LoggerAPI /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SSLService" /* Build configuration list for PBXNativeTarget "SSLService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SSLService" /* Debug */,
+				_ReleaseConf_SSLService /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Socket" /* Build configuration list for PBXNativeTarget "Socket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Socket" /* Debug */,
+				_ReleaseConf_Socket /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SwiftyJSON" /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SwiftyJSON" /* Debug */,
+				_ReleaseConf_SwiftyJSON /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_TwitterClone" /* Build configuration list for PBXNativeTarget "TwitterClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_TwitterClone" /* Debug */,
+				_ReleaseConf_TwitterClone /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_TwitterCloneTests" /* Build configuration list for PBXNativeTarget "TwitterCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_TwitterCloneTests" /* Debug */,
+				_ReleaseConf_TwitterCloneTests /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}

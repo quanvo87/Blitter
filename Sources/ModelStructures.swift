@@ -17,29 +17,24 @@ protocol HasFieldNames {
     associatedtype FieldNames: Hashable
 }
 
-struct Post: TwitterCloneModel {
+
+struct Tweets: TwitterCloneModel {
     enum FieldNames: String {
-        case id, user, body, timestamp
+        case id, author, subscriber, tweet, timestamp
     }
+    
     var id: UUID?
-    let user: String
-    let body: String
+    let author: String
+    let subscriber: String
+    let tweet: String
     let timestamp: Date
 }
 
-struct Users: TwitterCloneModel {
+struct Subscription: TwitterCloneModel {
     enum FieldNames: String {
-        case id, name
+        case id, author, subscriber
     }
     var id: UUID?
-    let name: String
-}
-
-struct Relationship: TwitterCloneModel {
-    enum FieldNames: String {
-        case id, followee, follower
-    }
-    var id: UUID?
-    let followee: String
-    let follower: String
+    let author: String
+    let subscriber: String
 }
