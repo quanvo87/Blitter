@@ -108,9 +108,7 @@ public struct OriginalTwitterClone: TwitterCloneProtocol {
                 
                 if let twts = tweets {
                     do {
-                        let ret = twts.toDictionary()
-                        let retjson = JSON(ret)
-                        try response.status(.OK).send(json: retjson).end()
+                        try response.status(.OK).send(json: JSON(twts.toDictionary())).end()
                         
                     } catch {
                         print(error)
@@ -153,10 +151,5 @@ public struct OriginalTwitterClone: TwitterCloneProtocol {
 // create index on tweets(author);
 // create index on tweets(subscriber);
 // create table subscription(id uuid primary key, author text, subscriber text) ;
-// CREATE INDEX ON subscription(author);
-
-//insert into tweets(id, author, tweet, subscriber, timestamp) values (uuid(), 'Joseph', 'Done with School', 'Aaron', toTimestamp(now()));
-
-
-//create table tweets(id uuid primary key, user text, body text, timestamp timestamp) ;
-//create table user(id uuid primary key, name text) ;
+// create index on subscription(author);
+// insert into tweets(id, author, tweet, subscriber, timestamp) values (uuid(), 'Joseph', 'Done with School', 'Aaron', toTimestamp(now()));
