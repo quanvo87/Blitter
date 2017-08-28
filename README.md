@@ -1,5 +1,7 @@
 # Blitter - A Social Networking App Demo
 
+🚫 This project is no longer maintained.
+
 An demonstration that uses the [Kitura web framework](https://github.com/IBM-Swift/Kitura) to produce a feed of posts that people can follow.
 
 [![Build Status](https://travis-ci.org/IBM-Swift/Blitter.svg?branch=master)](https://travis-ci.org/IBM-Swift/Blitter)
